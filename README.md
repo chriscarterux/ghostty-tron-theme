@@ -1,30 +1,59 @@
-# Tron Theme for Ghostty
+# Tron Themes for Ghostty
 
-A neon-inspired terminal theme for [Ghostty](https://ghostty.org/) based on the iconic TRON aesthetic. Features vibrant cyan and neon colors optimized for readability during development work.
+A collection of neon-inspired terminal themes for [Ghostty](https://ghostty.org/) based on the iconic TRON aesthetic. Choose your side of the Grid!
 
 ![Theme Preview](preview.png)
 
+## Theme Variants
+
+### 🔵 Tron (Classic Blue)
+The original Grid aesthetic - vibrant cyan neon representing the Users and their allies.
+- Pure black background with bright cyan foreground (`#E6F8FF`)
+- Neon cyan cursor (`#00EFFF`)
+- Optimized for readability during extended coding sessions
+
+### 🟠 Tron Orange (Clu's Forces)
+Inspired by Clu's army and the antagonists of Tron Legacy.
+- Warm orange/amber neon (`#FFB366`) on pure black
+- Fierce orange cursor (`#FF6600`)
+- Perfect for when you're feeling rebellious
+
+### 🔴 Tron Red (Rinzler)
+Deep red neon inspired by corrupted programs and Rinzler.
+- Blood-red accents (`#FF6B6B`) with intense red cursor (`#FF0000`)
+- For those who've crossed to the dark side
+
 ## Features
 
-- **Pure black background** (`#000000`) for deep contrast
-- **Bright cyan foreground** (`#E6F8FF`) for excellent readability
-- **Neon cyan cursor** (`#00EFFF`) that stands out
-- **Full ANSI color palette** with bright, vivid colors
-- Optimized for both light and dark environments
+- **Pure black background** (`#000000`) for maximum contrast
+- **Full ANSI color palette** with bright, vivid neon colors
+- **Three distinct color schemes** to match your mood
+- Optimized for both readability and style
 
 ## Installation
 
 ### Method 1: Direct Theme File
 
-1. Copy `tron.conf` to your Ghostty themes directory:
+1. Copy your chosen theme(s) to your Ghostty themes directory:
    ```bash
    mkdir -p ~/.config/ghostty/themes
+
+   # Choose one or install all three:
    cp tron.conf ~/.config/ghostty/themes/tron
+   cp tron-orange.conf ~/.config/ghostty/themes/tron-orange
+   cp tron-red.conf ~/.config/ghostty/themes/tron-red
    ```
 
 2. Add the theme to your Ghostty config (`~/.config/ghostty/config`):
    ```
+   # Classic blue
    theme = tron
+
+   # Or orange variant
+   # theme = tron-orange
+
+   # Or red variant
+   # theme = tron-red
    ```
 
 3. Restart Ghostty or reload the configuration
@@ -63,8 +92,9 @@ window-padding-y = 8
 window-padding-balance = true
 ```
 
-## Color Palette
+## Color Palettes
 
+### Tron (Classic Blue)
 | Color | Normal | Bright |
 |-------|---------|---------|
 | Black | `#000000` | `#4D4D4D` |
@@ -75,6 +105,30 @@ window-padding-balance = true
 | Magenta | `#8A2BE2` | `#B266FF` |
 | Cyan | `#00FFFF` | `#66FFFF` |
 | White | `#E6F8FF` | `#FFFFFF` |
+
+### Tron Orange
+| Color | Normal | Bright |
+|-------|---------|---------|
+| Black | `#000000` | `#4D1F00` |
+| Red | `#FF3300` | `#FF5522` |
+| Green | `#FF9933` | `#FFAA44` |
+| Yellow | `#FFCC00` | `#FFDD33` |
+| Blue | `#FF6600` | `#FF8833` |
+| Magenta | `#CC3300` | `#EE4422` |
+| Cyan | `#FF9966` | `#FFAA77` |
+| White | `#FFB366` | `#FFDDBB` |
+
+### Tron Red
+| Color | Normal | Bright |
+|-------|---------|---------|
+| Black | `#000000` | `#4D0000` |
+| Red | `#FF0000` | `#FF2222` |
+| Green | `#FF3333` | `#FF5555` |
+| Yellow | `#FF6666` | `#FF8888` |
+| Blue | `#CC0000` | `#EE1111` |
+| Magenta | `#990000` | `#BB0000` |
+| Cyan | `#FF9999` | `#FFAAAA` |
+| White | `#FFCCCC` | `#FFDDDD` |
 
 ## Screenshots
 
